@@ -42,6 +42,6 @@
 
 ---
 
-> Add your description here
+> A simple package with overrides for pyrig-private.
 
 ---

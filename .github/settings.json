@@ -1,7 +1,7 @@
 {
   "repository": {
     "name": "pyrig-private-overrides",
-    "description": "Add your description here",
+    "description": "A simple package with overrides for pyrig-private.",
     "homepage": "https://Winipedia.github.io/pyrig-private-overrides",
     "default_branch": "main",
     "delete_branch_on_merge": true,

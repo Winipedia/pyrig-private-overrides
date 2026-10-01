@@ -1,6 +1,6 @@
 [project]
 site_name = "pyrig-private-overrides"
-site_description = "Add your description here"
+site_description = "A simple package with overrides for pyrig-private."
 site_url = "https://Winipedia.github.io/pyrig-private-overrides"
 repo_url = "https://github.com/Winipedia/pyrig-private-overrides"
 edit_uri = "edit/main/docs"
