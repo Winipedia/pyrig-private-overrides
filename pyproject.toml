@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private-overrides"
-version = "1.0.1"
+version = "1.0.3"
 description = "A simple package with overrides for pyrig-private."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -51,7 +51,6 @@ dev = [
   "pre-commit-hooks>=6.0.0",
   "prek>=0.5.4",
   "pyflakes>=4.0.1",
-  "pyrig>=18.95.1",
   "pyrig-opensource>=1.0.0",
   "pyrig-pypi>=3.20.47",
   "pytest>=9.1.1",
