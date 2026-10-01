@@ -45,3 +45,15 @@
 > A simple package with overrides for pyrig-private.
 
 ---
+
+## Overview
+
+pyrig-private-overrides customizes the generated GitHub settings for the
+`pyrig-private` project. It keeps the project's own repository public while
+retaining its protection rules and public-project fork pull request policy.
+This is a maintenance package for `pyrig-private`, not a general-purpose plugin.
+
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available
+on the [documentation site](https://Winipedia.github.io/pyrig-private-overrides).

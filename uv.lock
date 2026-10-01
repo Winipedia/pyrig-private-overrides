@@ -775,10 +775,25 @@ wheels = [
 ]
 
 [[package]]
-name = "pyrig-private-overrides"
+name = "pyrig-private"
 version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyrig" },
+    { name = "pyrig-runtime" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/bd/ca/4e786f0ccaa9f1b7531e1f751ec09ec1b26d523309034b663dcb9ddcff53/pyrig_private-0.1.0.tar.gz", hash = "sha256:96638a2017c9495c2bd53b497eafe54eaaf63c6d78b6c7327578375d8b7655f2", size = 4495, upload-time = "2026-10-01T19:52:50.463Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5b/dc/84e60f4edadb7f7f9c59304ca161da5c122844523a7037d9c8cb8c0c4c79/pyrig_private-0.1.0-py3-none-any.whl", hash = "sha256:36ed03073bfdd0afffd85e6aeac77fa367ddcb12f972a2656a8e1a4dfdcdb197", size = 6699, upload-time = "2026-10-01T19:52:49.597Z" },
+]
+
+[[package]]
+name = "pyrig-private-overrides"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "pyrig-private" },
+    { name = "pyrig-public" },
     { name = "pyrig-runtime" },
 ]
 
@@ -796,7 +811,6 @@ dev = [
     { name = "pyrig-codecov" },
     { name = "pyrig-codeql" },
     { name = "pyrig-fixtures" },
-    { name = "pyrig-public" },
     { name = "pyrig-pypi" },
     { name = "pytest" },
     { name = "pytest-cov" },
@@ -815,7 +829,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pyrig-runtime", specifier = ">=3.24.3" }]
+requires-dist = [
+    { name = "pyrig-private", specifier = ">=0.1.0" },
+    { name = "pyrig-public", specifier = ">=1.1.1" },
+    { name = "pyrig-runtime", specifier = ">=3.24.3" },
+]
 
 [package.metadata.requires-dev]
 dev = [
@@ -831,7 +849,6 @@ dev = [
     { name = "pyrig-codecov", specifier = ">=3.17.46" },
     { name = "pyrig-codeql", specifier = ">=1.1.11" },
     { name = "pyrig-fixtures", specifier = ">=2.25.3" },
-    { name = "pyrig-public", specifier = ">=1.1.1" },
     { name = "pyrig-pypi", specifier = ">=3.20.47" },
     { name = "pytest", specifier = ">=9.1.1" },
     { name = "pytest-cov", specifier = ">=7.1.0" },

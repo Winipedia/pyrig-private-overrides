@@ -45,3 +45,29 @@
 > A simple package with overrides for pyrig-private.
 
 ---
+
+## Overview
+
+pyrig-private-overrides carries the project-specific overrides used for
+[`pyrig-private`](https://github.com/Winipedia/pyrig-private)'s own repository.
+It is a maintenance package for that project, not a general-purpose plugin.
+
+## Installation
+
+Add the package as a development dependency to the `pyrig-private` project, then
+regenerate the managed files:
+
+```bash
+uv add pyrig-private-overrides --dev
+uv run pyrig sync
+```
+
+## How it works
+
+The package combines the private and public repository settings so that the
+generated GitHub repository remains public.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.
