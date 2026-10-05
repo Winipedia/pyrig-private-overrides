@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private-overrides"
-version = "1.0.9"
+version = "1.0.14"
 description = "A simple package with overrides for pyrig-private."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -26,9 +26,9 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
+  "pyrig>=18.97.5",
   "pyrig-private>=0.1.0",
   "pyrig-public>=1.1.1",
-  "pyrig-runtime>=3.24.3",
 ]
 
 [project.urls]
@@ -52,6 +52,7 @@ dev = [
   "prek>=0.5.4",
   "pyflakes>=4.0.1",
   "pyrig-opensource>=1.0.0",
+  "pyrig-plugin>=0.1.0",
   "pyrig-pypi>=3.20.47",
   "pytest>=9.1.1",
   "pytest-cov>=7.1.0",
@@ -80,7 +81,7 @@ root = "src"
 
 [tool.deptry.per_rule_ignores]
 DEP002 = [
-  "pyrig-runtime",
+  "pyrig",
 ]
 
 [tool.pytest]
