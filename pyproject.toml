@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private-overrides"
-version = "1.0.37"
+version = "1.0.38"
 description = "A simple package with overrides for pyrig-private."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -123,7 +123,7 @@ select = [
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[tool.ryl.rules]
+[tool.ryl.lint.rules]
 ALL = "enable"
 key-ordering = "disable"
 
