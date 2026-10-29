@@ -1,5 +1,7 @@
 """Repository-level settings and protection ruleset configuration for GitHub."""
 
+from typing import override
+
 from pyrig_private.rig.configs.version_control.remote.settings import (
     RepositorySettingsConfigFile as PrivateRepositorySettingsConfigFile,
 )
@@ -17,6 +19,7 @@ class RepositorySettingsConfigFile(
     Combine the project's repository settings with public requirements.
     """
 
+    @override
     def visibility(self) -> str:
         """Return the public visibility required by this plugin.
 
