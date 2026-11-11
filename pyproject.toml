@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private-overrides"
-version = "1.1.74"
+version = "1.1.75"
 description = "A simple package with overrides for pyrig-private."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=19.2.0",
+  "pyrig>=19.29.0",
   "pyrig-private>=0.2.0",
   "pyrig-public>=1.2.0",
 ]
