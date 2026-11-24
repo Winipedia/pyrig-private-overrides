@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private-overrides"
-version = "1.1.93"
+version = "1.1.99"
 description = "A simple package with overrides for pyrig-private."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -133,6 +133,9 @@ strict = true
 ALL = "enable"
 key-ordering = "disable"
 yaml-directive = "disable"
+
+[tool.ty.rules]
+all = "error"
 
 [tool.typos.default]
 extend-ignore-re = [
